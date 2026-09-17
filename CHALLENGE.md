@@ -14,7 +14,7 @@ The two-stream model computes optical flow explicitly, because motion is hard fo
 Pick one model below as your starting point — each links to the original paper (and code, where available).
 
 | Model | Paper |
-|---|---|---|
+|---|---|
 | **I3D** (Inflated 3D ConvNets) | [Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset](https://arxiv.org/abs/1705.07750) — Carreira & Zisserman, 2017 |
 | **SlowFast** | [SlowFast Networks for Video Recognition](https://arxiv.org/abs/1812.03982) — Feichtenhofer et al., 2019 |
 | **TimeSformer** | [Is Space-Time Attention All You Need for Video Understanding?](https://arxiv.org/abs/2102.05095) — Bertasius, Wang & Torresani, 2021 |(https://github.com/facebookresearch/TimeSformer) |
