@@ -20,10 +20,4 @@ Pick one model below as your starting point — each links to the original paper
 | **TimeSformer** | [Is Space-Time Attention All You Need for Video Understanding?](https://arxiv.org/abs/2102.05095) — Bertasius, Wang & Torresani, 2021 | [github.com/facebookresearch/TimeSformer](https://github.com/facebookresearch/TimeSformer) |
 | **VideoMAE** | [VideoMAE: Masked Autoencoders are Data-Efficient Learners for Self-Supervised Video Pre-Training](https://arxiv.org/abs/2203.12602) — Tong et al., 2022 | [github.com/MCG-NJU/VideoMAE](https://github.com/MCG-NJU/VideoMAE) |
 
-**A hint on what to look for in each paper:**
-- I3D still keeps a two-stream option (RGB + flow), but shows that pure 3D convolutions over raw RGB clips can learn motion-like features directly — that's the key shift to look for.
-- SlowFast replaces optical flow with a second, high-frame-rate pathway that captures fast motion directly from RGB.
-- TimeSformer drops convolutions entirely and uses self-attention across space *and* time to relate frames to each other.
-- VideoMAE learns motion implicitly through a self-supervised pretext task (reconstructing masked video "tubes"), with no flow computation anywhere.
-
 Compare whichever one you pick against the two-stream paper's explicit optical-flow stream: what does the newer method trade away (interpretability, guaranteed motion signal) for what it gains (end-to-end learning, speed, less preprocessing)?
